@@ -1,3 +1,4 @@
+
 public class Matrix {
     private int size;
 
@@ -5,6 +6,7 @@ public class Matrix {
 
     public Matrix(int size ){
 
+      this.size = size;
       this.matrix = new int [size][size];
       System.out.println("Matrix created with size " + size + "x" + size);
     }
@@ -40,10 +42,14 @@ public class Matrix {
         System.out.println();
 
       };
+      }
+
+    }
     private void swap(int row1, int col1, int row2, int col2) {
       int temp = matrix[row1][col1];
       matrix[row1][col1] = matrix[row2][col2];
       matrix[row2][col2] = temp;
+    }
     public void flipMatrix(){
       for(int matrixRow =0; matrixRow<size; matrixRow++)
       for(int matrixColumn = 0; matrixColumn < size; matrixColumn++){
