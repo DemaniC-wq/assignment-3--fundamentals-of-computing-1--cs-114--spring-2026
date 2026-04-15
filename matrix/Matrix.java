@@ -1,4 +1,5 @@
 public class Matrix {
+    private int size;
 
     private int [][] matrix;
 
