@@ -44,6 +44,15 @@ public class Matrix {
       int temp = matrix[row1][col1];
       matrix[row1][col1] = matrix[row2][col2];
       matrix[row2][col2] = temp;
+    public void flipMatrix(){
+      for(int matrixRow =0; matrixRow<size; matrixRow++)
+      for(int matrixColumn = 0; matrixColumn < size; matrixColumn++){
+
+        // This is the condition to swap the elements across the diagonal
+        if(matrixRow + matrixColumn < size - 1) {
+          swap(matrixRow, matrixColumn, size - 1 - matrixColumn, size - 1 - matrixRow);
+        }
+      }
 
     }
   }
