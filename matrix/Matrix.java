@@ -31,6 +31,7 @@ public class Matrix {
         System.out.printf("%s%4d%s",  "\033[34m", matrix[matrixRow][matrixColumn], "\033[0m");
       else
         System.out.printf("%4d", matrix[matrixColumn][matrixRow]);
+       if (matrixRow + matrixColumn == matrix.length - 1) {
       }
         System.out.println();
 
